@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_weight="10"
+        android:background="@color/azul"
+        android:onClick="mostrarMensaje"
+        android:text="@string/button_label_toast"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="420sp"
+        android:layout_weight="70"
+        android:background="@color/amarillo"
+        android:gravity="center"
+        android:text="@string/contador"
+        android:textColor="@color/azul"
+        android:textSize="180sp" />
+
+    <Button
+        android:id="@+id/button_count"
+        android:layout_width="match_parent"
+        android:layout_height="70sp"
+        android:layout_weight="10"
+        android:background="@color/azul"
+        android:onClick="countUp"
+        android:text="@string/button_label_count"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="10"
+        android:onClick="reiniciarContador"
+        android:text="Reiniciar" />
+</LinearLayout>
